@@ -26,10 +26,10 @@
      catering invitation. No rules, no numerals, no small print.
 
      PHOTOGRAPHY SLOTS (repo root, relative):
-       chef-david-teyf.webp first screen
-       about-carving.webp   after The chef
-       about-cure.webp      after The craft
-       about-babka.webp     after The family
+       about-carving.webp   first screen (David carving in the kitchen)
+       chef-david-teyf.webp after The chef (David seated)
+       about-cure.webp      after The craft (pastrami being cut)
+       about-babka.webp     after The family (Minsk matzah babka)
 
      ═══════════════════════════════════════════════════════════════════ -->
 <style>
@@ -227,7 +227,7 @@ footer a:hover{color:var(--ink)}
 <a class="cta-bar" href="catering.html">Plan an event</a>
 
 <header class="hero">
-  <div class="img" style="--img:url(chef-david-teyf.webp);background-position:28% 32%"></div>
+  <div class="img" style="--img:url(about-carving.webp);background-position:50% 18%"></div>
   <h1><span class="w"><span>I</span></span><span class="w"><span>dream</span></span><span class="w"><span>of</span></span><span class="w"><span>pastrami.</span></span></h1>
   <p class="who">David Teyf, Chef and Owner</p>
 </header>
@@ -238,7 +238,7 @@ footer a:hover{color:var(--ink)}
   <p>Greenwich and Delancey is the deli. The one where the pastrami lives.</p>
 </section>
 
-<div class="photo"><div class="img" style="--img:url(about-carving.webp);background-position:50% 30%"></div></div>
+<div class="photo"><div class="img" style="--img:url(chef-david-teyf.webp);background-position:35% 40%"></div></div>
 
 <section class="chapter">
   <h2>The craft.</h2>
@@ -315,7 +315,7 @@ footer a:hover{color:var(--ink)}
 (function(){
   /* if the portrait has not been uploaded yet, centre the opening so the screen is not empty above the headline */
   var hero=document.querySelector('.hero'), probe=new Image();
-  probe.onerror=function(){ hero.classList.add('no-photo'); }; probe.src='chef-david-teyf.webp';
+  probe.onerror=function(){ hero.classList.add('no-photo'); }; probe.src='about-carving.webp';
 
   var nav=document.getElementById('nav'), close=document.getElementById('next');
   function chrome(){ var r=close.getBoundingClientRect(); nav.classList.toggle('paper',r.top<=40); }
