@@ -1,0 +1,51 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/catering-menu",
+      "destination": "/catering",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/catering",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/catering",
+      "permanent": true
+    },
+    {
+      "source": "/events",
+      "destination": "/catering",
+      "permanent": true
+    },
+    {
+      "source": "/menus",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
+      "source": "/our-menu",
+      "destination": "/menu",
+      "permanent": true
+    },
+    {
+      "source": "/our-story",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/story",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about",
+      "permanent": true
+    }
+  ]
+}
