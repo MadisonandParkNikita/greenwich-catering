@@ -3,9 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Greenwich &amp; Delancey · Kosher Catering, Delivered and Carved</title>
-<meta name="description" content="Greenwich &amp; Delancey brings hand-carved pastrami, brisket and the full deli table to your home, office or simcha. OU Glatt kosher catering across Fairfield County, Westchester and Manhattan.">
+<title>Greenwich &amp; Delancey · Kosher Catering in Greenwich, CT</title>
+<meta name="description" content="OU Glatt kosher deli catering from Greenwich, CT. Hand-carved pastrami, brisket and the full deli table for simchas and offices across CT, Westchester and NYC.">
 <link rel="canonical" href="https://www.greenwichanddelancey.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Greenwich &amp; Delancey">
+<meta property="og:title" content="Greenwich &amp; Delancey · Kosher Catering in Greenwich, CT">
+<meta property="og:description" content="OU Glatt kosher deli catering from Greenwich, CT. Hand-carved pastrami, brisket and the full deli table for simchas and offices across CT, Westchester and NYC.">
+<meta property="og:url" content="https://www.greenwichanddelancey.com/">
+<meta property="og:image" content="https://www.greenwichanddelancey.com/hero-carving-1200.webp">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="800">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FoodEstablishment", "name": "Greenwich & Delancey", "description": "OU Glatt kosher deli and catering by Chef David Teyf of Madison and Park.", "url": "https://www.greenwichanddelancey.com/", "image": "https://www.greenwichanddelancey.com/hero-carving-1200.webp", "email": "jenn@madisonandparkgroup.com", "servesCuisine": ["Kosher", "Jewish deli"], "hasMenu": "https://www.greenwichanddelancey.com/menu", "areaServed": [{"@type": "City", "name": "Greenwich, CT"}, {"@type": "AdministrativeArea", "name": "Fairfield County, CT"}, {"@type": "AdministrativeArea", "name": "Westchester County, NY"}, {"@type": "City", "name": "Manhattan, NY"}], "foundingDate": "2020", "founder": {"@type": "Person", "name": "David Teyf"}, "parentOrganization": {"@type": "Organization", "name": "Madison and Park"}}</script>
 <meta name="theme-color" content="#f4eddb">
 <meta name="format-detection" content="telephone=no">
 <link rel="icon" href="/favicon.ico" sizes="any">
@@ -132,6 +142,8 @@ nav.top .links a:not(.btn):hover{color:var(--ink)}
   position:absolute;inset:0;background:var(--green-deep) var(--img) center/cover;
   opacity:0;transform:scale(1.04);transition:opacity 1s var(--ease),transform 1.6s var(--ease);
 }
+.stage .ph img,.hero .strip img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .strip{position:relative;overflow:hidden}
 .stage .ph.on{opacity:1;transform:none}
 .stage .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(13,31,19,.55))}
 .stage .caption{
@@ -299,15 +311,15 @@ footer a:hover{color:var(--ink)}
       </div>
     </div>
   </div>
-  <div class="strip" role="img" aria-label="Chef David carving pastrami on a wooden board"></div>
+  <div class="strip"><img src="hero-carving-1200.webp" alt="Chef David Teyf carving smoked pastrami on a wooden board" width="1200" height="800" fetchpriority="high" style="object-position:50% 66%" srcset="hero-carving-1200.webp 1200w, hero-carving.webp 2400w" sizes="100vw"></div>
 </header>
 
 <section class="read">
   <aside class="stage" aria-hidden="true">
-    <div class="ph on" data-ph="bring" style="--img:url(about-carving.webp);background-position:50% 22%"></div>
-    <div class="ph" data-ph="occasions" style="--img:url(pastrami.webp)"></div>
-    <div class="ph" data-ph="menu" style="--img:url(chocolate-babka.webp)"></div>
-    <div class="ph" data-ph="where" style="--img:url(card-the-jeff.webp)"></div>
+    <div class="ph on" data-ph="bring" style="--img:url(about-carving.webp);background-position:50% 22%"><img src="about-carving.webp" alt="Chef David Teyf carving pastrami in the Greenwich &amp; Delancey kitchen" width="1334" height="2000" loading="lazy" decoding="async" style="object-position:50% 22%"></div>
+    <div class="ph" data-ph="occasions" style="--img:url(pastrami.webp)"><img src="pastrami.webp" alt="Chef David&#x27;s Special Pastrami sandwich on seeded rye with Kirby sour pickles" width="1280" height="960" loading="lazy" decoding="async"></div>
+    <div class="ph" data-ph="menu" style="--img:url(chocolate-babka.webp)"><img src="chocolate-babka.webp" alt="Chocolate babka, sliced on a wooden board" width="1280" height="960" loading="lazy" decoding="async"></div>
+    <div class="ph" data-ph="where" style="--img:url(card-the-jeff.webp)"><img src="card-the-jeff.webp" alt="The Jeff: pastrami and corned beef sandwich with pickled Russian slaw" width="1200" height="900" loading="lazy" decoding="async"></div>
     <div class="caption">
       <span class="on" data-ph="bring">Carved on site, when the room calls for it.</span>
       <span data-ph="occasions">Every table set the same way: properly.</span>
@@ -381,12 +393,14 @@ footer a:hover{color:var(--ink)}
 </section>
 
 <footer>
-  <span>Greenwich &amp; Delancey, 2026. OU Certified, Glatt Kosher.</span>
+  <span>Greenwich &amp; Delancey, 2026. OU Certified Glatt Kosher catering in Greenwich, Westchester and Manhattan.</span>
   <nav aria-label="Footer">
     <a href="index.html">Catering</a>
     <a href="catering.html">Plan an event</a>
     <a href="menu.html">Menu</a>
     <a href="about.html">Our Story</a>
+    <a href="thanksgiving-catering.html">Thanksgiving</a>
+    <a href="hanukkah-catering.html">Hanukkah</a>
     <a href="mailto:jenn@madisonandparkgroup.com">Email</a>
   </nav>
 </footer>
