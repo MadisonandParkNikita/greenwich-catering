@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.greenwichanddelancey.com/</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <image:image><image:loc>https://www.greenwichanddelancey.com/hero-carving.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/about-carving.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/pastrami.webp</image:loc></image:image>
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://www.greenwichanddelancey.com/menu</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <image:image><image:loc>https://www.greenwichanddelancey.com/about-kitchen.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/pastrami.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/about-cure.webp</image:loc></image:image>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://www.greenwichanddelancey.com/about</loc>
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-20</lastmod>
     <image:image><image:loc>https://www.greenwichanddelancey.com/about-carving.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/chef-david-teyf.webp</image:loc></image:image>
     <image:image><image:loc>https://www.greenwichanddelancey.com/about-cure.webp</image:loc></image:image>
@@ -27,18 +27,6 @@
   </url>
   <url>
     <loc>https://www.greenwichanddelancey.com/catering</loc>
-    <lastmod>2026-10-14</lastmod>
-  </url>
-  <url>
-    <loc>https://www.greenwichanddelancey.com/thanksgiving-catering</loc>
-    <lastmod>2026-10-14</lastmod>
-    <image:image><image:loc>https://www.greenwichanddelancey.com/about-cure.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.greenwichanddelancey.com/about-carving.webp</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://www.greenwichanddelancey.com/hanukkah-catering</loc>
-    <lastmod>2026-10-14</lastmod>
-    <image:image><image:loc>https://www.greenwichanddelancey.com/chocolate-babka.webp</image:loc></image:image>
-    <image:image><image:loc>https://www.greenwichanddelancey.com/pastrami.webp</image:loc></image:image>
+    <lastmod>2026-10-20</lastmod>
   </url>
 </urlset>

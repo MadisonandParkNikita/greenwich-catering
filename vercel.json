@@ -46,6 +46,16 @@
       "source": "/about-us",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/thanksgiving-catering",
+      "destination": "/catering",
+      "permanent": false
+    },
+    {
+      "source": "/hanukkah-catering",
+      "destination": "/catering",
+      "permanent": false
     }
   ]
 }

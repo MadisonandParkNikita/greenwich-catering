@@ -18,6 +18,7 @@
      until Web Analytics is switched on for the project in the Vercel dashboard. -->
 <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
 <script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/meta-pixel.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- ═══════════════════════════════════════════════════════════════════
@@ -137,7 +138,10 @@ footer a:hover{color:var(--ink)}
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
   .aside>p,  .aside h1 .w span{transform:none}
+  .aside>p,.aside .write,form{opacity:1}
 }
+
+p,li,figcaption,blockquote,dd{text-wrap:pretty}
 </style>
 <style>
 .lost{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:calc(var(--gutter) + 88px) var(--gutter) var(--gutter)}
@@ -187,8 +191,8 @@ footer a:hover{color:var(--ink)}
 </nav>
 
 <main class="lost">
-  <h1>This page has moved.</h1>
-  <p>Our website was rebuilt around catering. Everything you came for is still here.</p>
+  <h1>This page has&nbsp;moved.</h1>
+  <p>Our website was rebuilt around catering. Everything you came for is still&nbsp;here.</p>
   <div class="acts">
     <a class="send" href="/catering">Plan an event</a>
     <a class="send ghost" href="/menu">See the full menu</a>
@@ -201,8 +205,6 @@ footer a:hover{color:var(--ink)}
     <a href="/">Catering</a>
     <a href="/menu">Menu</a>
     <a href="/about">Our Story</a>
-    <a href="/thanksgiving-catering">Thanksgiving</a>
-    <a href="/hanukkah-catering">Hanukkah</a>
     <a href="mailto:jenn@madisonandparkgroup.com">Email</a>
   </nav>
 </footer>
