@@ -367,10 +367,16 @@ p,li,figcaption,blockquote,dd{text-wrap:pretty}
   var today=new Date(); today.setMinutes(today.getMinutes()-today.getTimezoneOffset());
   document.querySelector('input[name=date]').min=today.toISOString().slice(0,10);
 
+
+  /* if the send fails, keep the lead: log the real reason and give a one-tap prefilled email */
+  function failMail(payload){
+    var lines=['Name: '+(payload.name||''),'Email: '+(payload.email||''),(payload.phone?'Phone: '+payload.phone:''),'Occasion: '+(payload.occasion||''),'Date: '+(payload.event_date||''),'Guests: '+(payload.guests||''),(payload.location?'Where: '+payload.location:''),'','Notes: '+(payload.message||'')].filter(function(x,i){return x!==''||i===8;});
+    return 'mailto:jenn@madisonandparkgroup.com?subject='+encodeURIComponent(payload.subject||'Catering request')+'&body='+encodeURIComponent(lines.join('\n'));
+  }
   document.getElementById('inq').addEventListener('submit',function(ev){
     ev.preventDefault();
     var f=ev.target, btn=f.querySelector('.send'), err=document.getElementById('err'), d=new FormData(f);
-    var payload={access_key:'f05e1350-3ae6-4cdd-9acd-d73f6614d0f9',subject:'Catering request: '+(d.get('occasion')||'')+' for '+(d.get('name')||''),from_name:'Greenwich and Delancey website',ccemail:'jenn@madisonandparkgroup.com',replyto:d.get('email'),botcheck:d.get('botcheck')||'',
+    var payload={access_key:'f05e1350-3ae6-4cdd-9acd-d73f6614d0f9',subject:'Catering request: '+(d.get('occasion')||'')+' for '+(d.get('name')||''),from_name:'Greenwich and Delancey website',replyto:d.get('email'),botcheck:d.get('botcheck')||'',
       name:d.get('name'),email:d.get('email'),phone:d.get('phone'),event_date:d.get('date'),guests:d.get('guests'),location:d.get('location'),occasion:d.get('occasion'),message:d.get('notes')};
     btn.disabled=true; btn.textContent='Sending'; err.style.display='none';
     fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(payload)})
@@ -382,7 +388,7 @@ p,li,figcaption,blockquote,dd{text-wrap:pretty}
         f.style.display='none'; document.getElementById('done').classList.add('on');
         scrollTo({top:0,behavior:'smooth'});
       })
-      .catch(function(){ btn.disabled=false; btn.textContent='Send the request'; err.style.display='block'; });
+      .catch(function(e){ console.error('Web3Forms send failed:',e&&e.message); btn.disabled=false; btn.textContent='Send the request'; err.innerHTML='That did not go through. <a href="'+failMail(payload)+'">Tap here to email your details to Jenn</a> and we will take it from&nbsp;there.'; err.style.display='block'; });
   });
 })();
 </script>
